@@ -7,8 +7,8 @@ public class GuessingGame {
         try {
             Random random = new Random();
 
-            int raha = 15;
-            System.out.println("Sinulla on käytettävissäsi 15 euroa.");
+            int raha = 10;
+            System.out.println("Sinulla on käytettävissäsi 10 euroa.");
 
             while (raha > 0) {
             System.out.println("\nAnna rahamäärä, jolla haluat pelata:");
@@ -40,13 +40,13 @@ public class GuessingGame {
             }
 
             if (voitot == 1) {
-                System.out.println("\nVoitit 5 euroa!");
+                System.out.println("\nJee! Voitit 5 euroa!");
                 raha += 5 - panos;
             } else if (voitot == 2) {
-                System.out.println("\nVoitit 10 euroa!");
+                System.out.println("\nVau! Voitit 10 euroa!");
                 raha += 10 - panos;
             } else if (voitot == 3) {
-                System.out.println("\nVoitit jättipotin 15 euroa!");
+                System.out.println("\nUpeaa! Voitit jättipotin 15 euroa!");
                 raha += 15 - panos;
             } else {
                 System.out.println("\nVoi ei, hävisit!");
@@ -65,7 +65,7 @@ public class GuessingGame {
                     return;
                 }
             } else {
-                System.out.println("Rahasi ovat loppu. Peli päättyy.");
+                System.out.println("Voi harmi! Rahasi ovat loppu. Peli päättyy.");
             }
         }
         } finally {
