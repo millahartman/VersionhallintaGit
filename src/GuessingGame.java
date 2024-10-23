@@ -72,5 +72,6 @@ public class GuessingGame {
             scanner.close();
         }
         System.out.println("Kiitos pelaamisesta!");
+        System.out.println("Tervetuloa uudelleen!");
     }
 }   
